@@ -70,8 +70,7 @@ time.sleep(2)
 ##calculadora IMC
 def calc_imc():
         imc = (peso / (altura * altura))
-        resultado_imc = round(imc, 3)
-        print(f'\nSeu IMC é igual a: {resultado_imc}')
+        print(f'\nSeu IMC é igual a: {imc:.2f}')
 
         if imc < 18.5:
             print('Você está abaixo do peso.')
@@ -97,19 +96,19 @@ def calc_nac():
         geb_masc = ((13.75*peso) + (5*altura*100) - (6.76*idade) + 66.5)
         if op_nac == 1:
                 ccd_masc1 = ((geb_masc)*1.2)
-                print('O tanto de calorias diárias que você deve consumir é {} kcal.'.format(ccd_masc1))
+                print(f'O tanto de calorias diárias que você deve consumir é {ccd_masc1:.2f} kcal.')
         elif op_nac == 2:
                 ccd_masc2 = ((geb_masc)*1.375)
-                print('O tanto de calorias diárias que você deve consumir é {} kcal.'.format(ccd_masc2))
+                print(f'O tanto de calorias diárias que você deve consumir é {ccd_masc2:.2f} kcal.')
         elif op_nac == 3:
                 ccd_masc3 = ((geb_masc)*1.55)
-                print('O tanto de calorias diárias que você deve consumir é {} kcal.'.format(ccd_masc3))
+                print(f'O tanto de calorias diárias que você deve consumir é {ccd_masc3:.2f} kcal.')
         elif op_nac == 4:
                 ccd_masc4 = ((geb_masc)*1.725)
-                print('O tanto de calorias diárias que você deve consumir é {} kcal.'.format(ccd_masc4))
+                print(f'O tanto de calorias diárias que você deve consumir é {ccd_masc4:.2f} kcal.')
         elif op_nac == 5:
                 ccd_masc5 = ((geb_masc)*1.9)
-                print('O tanto de calorias diárias que você deve consumir é {} kcal'.format(ccd_masc5))
+                print(f'O tanto de calorias diárias que você deve consumir é {ccd_masc5:.2f} kcal')
         else:
                 print('Sua opção não existe! Verifique as informações.')
             
@@ -118,19 +117,19 @@ def calc_nac():
         geb_fem = ((9.56*peso) + (1.85*(altura*100)) - (4.68*idade) + 665)
         if op_nac == 1:
                 ccd_fem1 = ((geb_fem)*1.2)
-                print('O tanto de calorias diárias que você deve consumir é {} kcal'.format(ccd_fem1))
+                print(f'O tanto de calorias diárias que você deve consumir é {ccd_fem1:.2f} kcal')
         elif op_nac == 2:
                 ccd_fem2 = ((geb_fem)*1.375)
-                print('O tanto de calorias diárias que você deve consumir é {} kcal'.format(ccd_fem2))
+                print(f'O tanto de calorias diárias que você deve consumir é {ccd_fem2:.2f} kcal')
         elif op_nac == 3:
                 ccd_fem3 = ((geb_fem)*1.55)
-                print('O tanto de calorias diárias que você deve consumir é {} kcal'.format(ccd_fem3))
+                print(f'O tanto de calorias diárias que você deve consumir é {ccd_fem3:.2f} kcal')
         elif op_nac == 4:
                 ccd_fem4 = ((geb_fem)*1.725)
-                print('O tanto de calorias diárias que você deve consumir é {} kcal'.format(ccd_fem4))
+                print(f'O tanto de calorias diárias que você deve consumir é {ccd_fem4:.2f} kcal')
         elif op_nac == 5:
                 ccd_fem5 = ((geb_fem)*1.9)
-                print('O tanto de calorias diárias que você deve consumir é {} kcal'.format(ccd_fem5))
+                print(f'O tanto de calorias diárias que você deve consumir é {ccd_fem5:.2f} kcal')
         else:
                 print('Sua opção de NAC não existe! Verifique as informações.')
     else:
@@ -171,4 +170,3 @@ def calculadora():
                 exit()
 
 calculadora()
-return_calc()
